@@ -333,3 +333,26 @@ blockquote>#opsL {
 #kado3 {
     display: none !important
 }
+
+/* ===== Kepingan Salju ===== */
+.salju {
+    position: fixed;
+    top: -8%;
+    z-index: 999;
+    color: #fff;
+    opacity: .7;
+    pointer-events: none;
+    text-shadow: 0 0 6px rgba(255, 255, 255, .6);
+    animation-name: jatuhSalju;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jatuhSalju {
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+    to {
+        transform: translateY(115vh) rotate(360deg);
+    }
+}
